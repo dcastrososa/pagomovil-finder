@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>PagoMovil Finder</title>
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js" type="text/javascript"></script>
+        <script src="finder.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div>
+            <label for="text">Textp</label>
+            <input name="text" id="text" />
+        </div>
+        <div>
+            <button onclick="resolve()">Resolver</button>
+        </div>
+        <h4>resultado</h4>
+        <div>
+            <label for="phonenumber">Telefono</label>
+            <input name="phonenumber" id="phonenumber" />
+            <button onclick="copyToClipboard('phonenumber')">copiar</button>
+        </div>
+        <div>
+            <label for="bankname">Nombre Banco</label>
+            <input name="bankname" id="bankname" />
+            <button onclick="copyToClipboard('bankname')">copiar</button>
+        </div>
+        <div>
+            <label for="bankcode">Codigo banco</label>
+           <input name="bankcode" id="bankcode" />
+            <button onclick="copyToClipboard('bankcode')">copiar</button>
+        </div>
+        <div>
+            <label for="dni">DNI</label>
+            <input name="dni" id="dni" />
+            <button onclick="copyToClipboard('dni')">copiar</button>
+        </div>
+    </body>
+</html>
